@@ -22,9 +22,9 @@ class Loader implements LoaderConfig {
         this.options = options;
     }
 
-    getResp(
+    getResp<T>(
         { endpoint, options = {} }: RequestParams,
-        callback = () => {
+        callback: Callback<T> = () => {
             console.error('No callback for GET response');
         }
     ) {
