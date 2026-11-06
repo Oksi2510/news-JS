@@ -1,6 +1,6 @@
 import './news.css';
 
-interface Article {
+export interface Article {
     source: {
         id: string | null;
         name: string;

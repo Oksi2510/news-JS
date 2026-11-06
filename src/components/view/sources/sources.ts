@@ -1,5 +1,5 @@
 import './sources.css';
-interface Source {
+export interface Source {
     id: string | null;
     name: string;
 }
