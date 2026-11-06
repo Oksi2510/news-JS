@@ -1,12 +1,12 @@
 import News, { Article } from './news/news';
 import Sources, { Source } from './sources/sources';
 
-interface ApiResponse {
+export interface ApiResponse {
     status: string;
     totalResults: number;
     articles: Article[];
 }
-interface SourcesResponse {
+export interface SourcesResponse {
     status: string;
     sources: Source[];
 }
